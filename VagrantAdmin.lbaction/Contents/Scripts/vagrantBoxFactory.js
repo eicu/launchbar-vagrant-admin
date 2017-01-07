@@ -15,7 +15,8 @@ var VagrantBoxFactory = (function () {
             box = this.buildBox({
                 'id': id,
                 'name': boxConfig.name,
-                'state': boxConfig.state
+                'state': boxConfig.state,
+                'path': boxConfig.vagrantfile_path
             });
             boxes.push(box);
         }
@@ -24,7 +25,7 @@ var VagrantBoxFactory = (function () {
     };
 
     VagrantBoxFactory.prototype.buildBox = function (params) {
-        return new VagrantBox(params.id, params.name, params.state);
+        return new VagrantBox(params.id, params.name, params.state, params.path);
     };
 
     return new VagrantBoxFactory();

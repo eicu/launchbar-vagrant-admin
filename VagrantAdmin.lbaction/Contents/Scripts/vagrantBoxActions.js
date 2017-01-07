@@ -37,6 +37,7 @@ var ActionUp = (function () {
         this.title = 'Up';
         this.icon = 'fa-cloud-upload';
         this.command = 'up';
+        this.excludeFromState = ['running'];
     }
     Action.prototype = new BaseAction();
 
@@ -48,6 +49,7 @@ var ActionProvision = (function () {
         this.title = 'Provision';
         this.icon = 'fa-cogs';
         this.command = 'provision';
+        this.excludeFromState = ['poweroff'];
     }
     Action.prototype = new BaseAction();
 
@@ -71,6 +73,7 @@ var ActionReload = (function () {
         this.title = 'Reload';
         this.icon = 'fa-recycle';
         this.command = 'reload';
+        this.excludeFromState = ['poweroff'];
     }
     Action.prototype = new BaseAction();
 

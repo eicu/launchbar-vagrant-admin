@@ -39,6 +39,7 @@ var VagrantBox = (function () {
 
         actions.forEach(function (action) {
             if (action.runOn(this.state)) {
+                action.setPath(this.path);
                 list.push(action.renderItem());
             }
         }.bind(this));

@@ -35,7 +35,7 @@ function runBoxAction(arguments) {
 
     LaunchBar.executeAppleScript(
         'tell application "Terminal"',
-        '   do script "' + command + '"' ,
+        '   do script "' + command + '; exit"' ,
         '   activate',
         'end tell'
     );
