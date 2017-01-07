@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.eicu.LaunchBar.action.VagrantAdmin</string>
+	<key>CFBundleName</key>
+	<string>VagrantAdmin</string>
+	<key>LBAbbreviation</key>
+	<string>va</string>
+	<key>LBDebugLogEnabled</key>
+	<true/>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBAuthor</key>
+		<string>Andre Salmon</string>
+		<key>LBEmail</key>
+		<string>mail@andre-salmon.de</string>
+		<key>LBTwitter</key>
+		<string></string>
+		<key>LBWebsiteURL</key>
+		<string></string>
+	</dict>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBResultType</key>
+			<string>unknown</string>
+			<key>LBScriptName</key>
+			<string>default.js</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
