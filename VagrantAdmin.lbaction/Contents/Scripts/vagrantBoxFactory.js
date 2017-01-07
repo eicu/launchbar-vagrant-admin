@@ -10,8 +10,6 @@ var VagrantBoxFactory = (function () {
             var boxConfig = config[id],
                 box;
 
-            // LaunchBar.debugLog(JSON.stringify(boxConfig));
-
             box = this.buildBox({
                 'id': id,
                 'name': boxConfig.name,

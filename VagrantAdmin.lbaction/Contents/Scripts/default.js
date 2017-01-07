@@ -5,15 +5,11 @@ var pathToVagrantIndex = '~/.vagrant.d/data/machine-index/index';
 function run(argument) {
     var vagrantIndex, vagrantBoxes, items = [];
 
-    // LaunchBar.debugLog(JSON.stringify(VagrantBoxFactory));
-
     vagrantIndex = File.readJSON(pathToVagrantIndex);
     vagrantBoxes = VagrantBoxFactory.buildBoxes(vagrantIndex.machines);
     vagrantBoxes.forEach(function (box) {
         items.push(box.renderItem());
     });
-
-    LaunchBar.debugLog(JSON.stringify(items));
 
     return items;
 }
