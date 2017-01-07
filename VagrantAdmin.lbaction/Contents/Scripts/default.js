@@ -29,11 +29,15 @@ function runBox(arguments) {
 
 function runBoxAction(arguments) {
     var actionParams = JSON.parse(arguments),
-        command, aScript;
+        command;
 
     command = 'cd ' + actionParams.path + ' && ' + 'vagrant ' + actionParams.command;
-    aScript = 'tell application "Terminal" to activate';
 
-    // var result = LaunchBar.execute('/usr/bin/osascript', '-e', aScript);
-    LaunchBar.executeAppleScript(aScript);
+    LaunchBar.executeAppleScript(
+        'tell application "Terminal"',
+        '   do script "' + command + '"' ,
+        '   activate',
+        'end tell'
+    );
+    LaunchBar.executeAppleScript('tell application "LaunchBar" to hide');
 }
