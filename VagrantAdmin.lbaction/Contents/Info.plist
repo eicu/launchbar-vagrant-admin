@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIconFile</key>
+	<string>actionIcon.png</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.eicu.LaunchBar.action.VagrantAdmin</string>
 	<key>CFBundleName</key>
@@ -25,8 +27,12 @@
 	<dict>
 		<key>LBDefaultScript</key>
 		<dict>
+			<key>LBKeepWindowActive</key>
+			<true/>
 			<key>LBResultType</key>
 			<string>unknown</string>
+			<key>LBReturnsResult</key>
+			<true/>
 			<key>LBScriptName</key>
 			<string>default.js</string>
 		</dict>
